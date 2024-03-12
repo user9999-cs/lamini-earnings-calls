@@ -202,7 +202,7 @@ class AnswerGenerator(GenerationNode):
 
 
 async def save_answers(answers):
-    path = "~/lamini-earnings-calls/data/answers.jsonl"
+    path = "/Users/karthik/lamini-earnings-calls/data/answers.jsonl"
 
     with jsonlines.open(path, "w") as writer:
         pbar = tqdm(desc="Saving answers", unit=" answers")
