@@ -17,6 +17,6 @@ $LOCAL_DIRECTORY/scripts/build.sh
 
 docker run -it \
     -v ~/.lamini:/root/.lamini \
-    -v $LOCAL_DIRECTORY/data:/app/lamini-earnings-calls/data \
+    -v $LOCAL_DIRECTORY/data:/lamini-earnings-calls/data \
     lamini-earnings-calls:latest $@
 
