@@ -29,7 +29,7 @@ async def main():
 
 
 async def load_earnings_calls():
-    path = "/app/lamini-earnings-calls/data/earnings-transcripts.jsonl"
+    path = "~/lamini-earnings-calls/data/earnings-transcripts.jsonl"
 
     with jsonlines.open(path) as reader:
         for line in reader:
@@ -202,7 +202,7 @@ class AnswerGenerator(GenerationNode):
 
 
 async def save_answers(answers):
-    path = "/app/lamini-earnings-calls/data/answers.jsonl"
+    path = "~/lamini-earnings-calls/data/answers.jsonl"
 
     with jsonlines.open(path, "w") as writer:
         pbar = tqdm(desc="Saving answers", unit=" answers")
