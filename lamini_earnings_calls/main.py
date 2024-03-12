@@ -29,7 +29,7 @@ async def main():
 
 
 async def load_earnings_calls():
-    path = "~/lamini-earnings-calls/data/earnings-transcripts.jsonl"
+    path = "/Users/karthik/lamini-earnings-calls/data/earnings-transcripts.jsonl"
 
     with jsonlines.open(path) as reader:
         for line in reader:
